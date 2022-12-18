@@ -1,17 +1,6 @@
 package pl.edu.wszib.orders.api.product;
 
-// TODO TASK: use generic type (ApiResult) to reduce duplicated code
-public interface ProductResult {
-    ProductApi success();
+import pl.edu.wszib.orders.api.ApiResult;
 
-    ProductError error();
-
-    default boolean isSuccess() {
-        return success() != null;
-    }
-
-    default boolean isError() {
-        return !isSuccess();
-    }
-
+public interface ProductResult extends ApiResult<ProductApi, ProductError> {
 }
