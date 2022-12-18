@@ -1,7 +1,7 @@
 package pl.edu.wszib.orders.api.order;
 
 public interface OrderFacadeApi {
-    OrderResult create(OrderCreateApi orderCreate);
+    OrderResult create();
     OrderResult get(String orderId);
     OrderResult addProduct(String orderId, String productId);
     OrderResult removeProduct(String orderId, String productId);
