@@ -23,6 +23,8 @@ Using `$revision` mechanism (https://maven.apache.org/maven-ci-friendly.html)
 
 #### 1.1 Functionality
 
+Projected in `pl.edu.wszib.orders.api.order.OrderFacadeApi`
+
 - create order
 - add product
 - remove product
